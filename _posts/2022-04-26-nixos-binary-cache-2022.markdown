@@ -33,16 +33,16 @@ Install the [`minio` command line client `mc`](https://github.com/minio/mc). Cre
 
 ```json
 {
-	"version": "10",
-	"aliases": {
-		"s3": {
-			"url": "https://s3.example.org",
-			"accessKey": "minio",
-			"secretKey": "oenu1Yuch3rohz2ahveid0koo4giecho",
-			"api": "s3v4",
-			"path": "auto"
-		}
-	}
+    "version": "10",
+    "aliases": {
+        "s3": {
+            "url": "https://s3.example.org",
+            "accessKey": "minio",
+            "secretKey": "oenu1Yuch3rohz2ahveid0koo4giecho",
+            "api": "s3v4",
+            "path": "auto"
+        }
+    }
 }
 ```
 ⚠ Be sure to replace the `secretKey` with the password you generated above for the minio root user.
