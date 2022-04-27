@@ -29,7 +29,7 @@ twitter_username: jcollie
 github_username: jcollie
 
 # Build settings
-theme: dinky
+theme: jekyll-theme-dinky
 plugins:
   - jekyll-feed
 # Exclude from processing.
