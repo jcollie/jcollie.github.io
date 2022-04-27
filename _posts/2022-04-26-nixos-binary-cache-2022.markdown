@@ -5,7 +5,7 @@ date:       2022-04-26 21:35:48 -0500
 categories: nixos
 ---
 
-⚠ This is a summary of my investigations into setting up `minio` as a private binary cache for [Nix](https://nixos.org/). I'm very new to Nix/NixOS so I'm sure there will be changes as I learn more about Nix. These instructions are also cobbled together from many different sources that I didn't keep track of but I want to thank everyone that has shared a blog post or forum post on setting up binary caches.
+⚠ This is a summary of my investigations into setting up `minio` as a private binary cache for [Nix](https://nixos.org/). I'm very new to Nix/NixOS so I'm sure there will be changes as I learn more about Nix. These instructions are also cobbled together from many different sources. I've linked a few of my sources at the end of the post.
 
 I decided to publish this since many of those sources (including what I could find in the official documentation) were incomplete or out of date. NixOS is a very fast moving project and blog and forum posts bitrot quickly it seems.
 
