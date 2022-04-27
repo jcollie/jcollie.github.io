@@ -192,3 +192,4 @@ Here are some of the sources that I used in making this document:
 - [Remo Höppli's Medium post on binary caches](https://medium.com/earlybyte/the-s3-nix-cache-manual-e320da6b1a9b)
 - [Kevin Cox's blog post on build caching in Docker containers](https://kevincox.ca/2022/01/02/nix-in-docker-caching/)
 - [Freeman L.'s blog post on build caching](https://web.archive.org/web/20210121024158/https://fmnxl.com/blog/setting-up-nix-binary-cache/) (resurrected using the Internet Archive)
+- [NixOS forum discission on setting up a S3 binary cache](https://discourse.nixos.org/t/setting-up-a-s3-binary-cache/8763/18)
