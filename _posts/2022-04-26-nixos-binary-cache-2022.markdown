@@ -91,7 +91,9 @@ $ mc mb s3/nix-cache
 ```
 Create the `nixbuilder` minio user and assign a password.
 ```shell
+$ set +o history
 $ mc admin user add s3 nixbuilder oenu1Yuch3rohz2ahveid0koo4giecho
+$ set -o history
 ```
 ⚠ Be sure to replace the password above with the password you generated for the minio nixbuilder account.
 
@@ -180,3 +182,13 @@ $ nix copy --to 's3://nix-cache?profile=nixbuilder&endpoint=s3.example.org' <sto
 ```
 
 If you are watching the `minio` status with `mc admin trace s3` you should see activity as `nix` copies files to/from the cache.
+
+Here are some of the sources that I used in making this document:
+
+- [Binary cache in the NixOS wiki](https://nixos.wiki/wiki/Binary_Cache)
+- [Serving a Nox store via S3 in the NixOS manual](https://nixos.org/manual/nix/stable/package-management/s3-substituter.html)
+- [Serving a Nix store via HTTP in the NixOS manual](https://nixos.org/manual/nix/stable/package-management/binary-cache-substituter.html)
+- [Farid Zakaria's blog post on Nix binary caches](https://fzakaria.com/2021/08/12/a-nix-binary-cache-specification.html)
+- [Remo Höppli's Medium post on binary caches](https://medium.com/earlybyte/the-s3-nix-cache-manual-e320da6b1a9b)
+- [Kevin Cox's blog post on build caching in Docker containers](https://kevincox.ca/2022/01/02/nix-in-docker-caching/)
+- [Freeman L.'s blog post on build caching](https://web.archive.org/web/20210121024158/https://fmnxl.com/blog/setting-up-nix-binary-cache/) (resurrected using the Internet Archive)
