@@ -8,5 +8,5 @@ let env = bundlerEnv {
   };
 in stdenv.mkDerivation {
   name = "jeffs-stuff";
-  buildInputs = [env bundler ruby];
+  buildInputs = [env bundler jekyll ruby];
 }
