@@ -1,0 +1,15 @@
+---
+.title = "Devlog - 2025",
+.date = @date("2025-09-07T16:54:00-0500"),
+.author = "Jeffrey C. Ollie",
+.layout = "devlog.shtml",
+.draft = false,
+---
+[]($section.id('about'))
+
+>[]($block.attrs('note'))
+>You can [subscribe to this page via RSS]($link.page('devlog').alternative('rss')).
+>This page lists entries for 2025, for past entries consult the [devlog archive](/devlog/).
+
+## [Hello Zine!]($section.id("2025-09-07T16:54:00-0500"))
+Re-starting my blog/website with Zine!

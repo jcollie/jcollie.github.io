@@ -1,0 +1,68 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1757208601,
+        "narHash": "sha256-n2RYdKMqyU5qQOyMEtkywqUTZQ0kzmlKyDtrJpoRQwY=",
+        "rev": "8eb28adfa3dc4de28e792e3bf49fcf9007ca8ac9",
+        "type": "tarball",
+        "url": "https://releases.nixos.org/nixos/unstable/nixos-25.11pre856926.8eb28adfa3dc/nixexprs.tar.xz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "zine": "zine"
+      }
+    },
+    "zine": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "zon2nix": "zon2nix"
+      },
+      "locked": {
+        "lastModified": 1757279318,
+        "narHash": "sha256-7wTU9F2fJbVXVRltEIcrpM/0BDpLfxxwfijh+B8/DJo=",
+        "ref": "jeff",
+        "rev": "e7c907595e6e8de037396f6309bd1957fa230dd3",
+        "revCount": 355,
+        "type": "git",
+        "url": "https://github.com/jcollie/zine.git"
+      },
+      "original": {
+        "ref": "jeff",
+        "type": "git",
+        "url": "https://github.com/jcollie/zine.git"
+      }
+    },
+    "zon2nix": {
+      "inputs": {
+        "nixpkgs": [
+          "zine",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1757108721,
+        "narHash": "sha256-F/aIqn76zO7tSx4I8/1Pg1qJ+jXzNkSXtr2U/IXlF0A=",
+        "ref": "refs/heads/main",
+        "rev": "7b5973f0ca5b077354c273143a437e4f53bfc4d7",
+        "revCount": 476,
+        "type": "git",
+        "url": "https://github.com/jcollie/zon2nix.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://github.com/jcollie/zon2nix.git"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

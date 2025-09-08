@@ -1,0 +1,12 @@
+---
+.title = "About",
+.date = @date("2025-09-07T16:54:00-0500"),
+.author = "Jeffrey C. Ollie",
+.layout = "index.shtml",
+.draft = false,
+---
+I'm from Iowa.
+
+I have a beard.
+
+I like to program.

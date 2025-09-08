@@ -1,0 +1,16 @@
+---
+.title = "Devlog Archive",
+.date = @date("2025-09-07T16:54:00"),
+.author = "Jeffrey C. Ollie",
+.layout = "devlog-archive.shtml",
+.alternatives = [{
+    .name = "rss",
+    .layout = "devlog.xml",
+    .output = "index.xml",
+}],
+.draft = false,
+---
+
+This page lists all the devlog years that are present on this site.
+
+The latest devlog year is also available [via RSS feed]($link.alternative('rss')).
