@@ -10,6 +10,8 @@ Site {
         "hole-left.png",
         "hole-right.png",
         "paper.jpg",
-        "white-crumpled-paper-texture-background.jpg"
+        "white-crumpled-paper-texture-background.jpg",
+        "table.jpg",
+        "blackboard.jpg",
     ],
 }

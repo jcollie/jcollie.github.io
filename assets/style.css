@@ -7,16 +7,13 @@ h5 {
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  /* color: #ddd; */
 }
 
 b,
 strong {
-  /* color: #fff; */
 }
 
 a {
-  /* color: #eee; */
 }
 
 html {
@@ -29,22 +26,20 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #111111;
+  /* background-color: #111111; */
 }
 
 body {
-  /* width: 800px; */
-  /* padding: 15px; */
-  /* display: flex; */
-  /* flex-direction: column; */
   line-height: 1.2em;
+  background-image: url("/blackboard.jpg");
+  background-size: repeat;
 }
 
 #columns {
   display: flex;
-  /* height: 100vh; */
-  min-height: 100vh;
   flex-direction: row;
+  min-height: 100vh;
+  height: 100%;
   background-image: url("/white-crumpled-paper-texture-background.jpg");
   background-repeat: repeat-y;
 }
@@ -52,6 +47,24 @@ body {
 #columns > .holes {
   width: 28px;
   min-height: 100vh;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.right {
+  width: 28px;
+  flex-grow: 1;
+  min-height: 100vh;
+  background-image: url("/hole-right.png");
+  background-repeat: repeat-y;
+}
+
+.left {
+  width: 28px;
+  min-height: 100vh;
+  flex-grow: 1;
+  background-image: url("/hole-left.png");
+  background-repeat: repeat-y;
 }
 
 #columns > #paper {
@@ -64,28 +77,13 @@ body {
   min-height: 100vh;
   background: repeating-linear-gradient(
     180deg,
-    #d0f0d088 0 3.6em,
-    #ffffff88 0 7.2em
+    #d0f0d077 0 3.6em,
+    #ffffff00 0 7.2em
   );
 }
 
 #content {
   padding: 1em;
-  /* background: repeating-linear-gradient( */
-  /* 180deg, */
-  /* #d0f0d0 0 3.6em, */
-  /* #ffffff 0 7.2em */
-  /* ); */
-}
-
-.holes.right {
-  background-image: url("/hole-right.png");
-  background-repeat: repeat-y;
-}
-
-.holes.left {
-  background-image: url("/hole-left.png");
-  background-repeat: repeat-y;
 }
 
 .site-title {
