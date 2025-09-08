@@ -3,9 +3,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Adwaita Sans", sans;
-  font-optical-sizing: auto;
-  font-weight: 800;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -17,8 +16,7 @@ a {
 }
 
 html {
-  font-family: "Adwaita Sans", serif;
-  font-optical-sizing: auto;
+  font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.2em;
@@ -67,7 +65,7 @@ body {
 }
 
 #columns > #paper {
-  width: 800px;
+  width: 900px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -117,25 +115,17 @@ p {
   margin-bottom: 0.5em;
 }
 
-code {
-  font-family: "Adwaita Mono", monospace;
-  /* font-size: 0.9em; */
-  line-height: 1.2em;
-  /* font-optical-sizing: auto; */
-  /* font-weight: 400; */
-  font-style: normal;
-  /* font-variation-settings: "wdth" 100; */
-}
+/* code { */
+/* font-family: "Adwaita Mono", monospace; */
+/* font-style: normal; */
+/* line-height: 1.2em; */
+/* } */
 
-.code {
-  font-family: "Adwaita Mono", monospace;
-  /* font-size: 0.9em; */
-  line-height: 1.2em;
-  /* font-optical-sizing: auto; */
-  /* font-weight: 400; */
-  font-style: normal;
-  /* font-variation-settings: "wdth" 100; */
-}
+/* .code { */
+/* font-family: "Adwaita Mono", monospace; */
+/* font-style: normal; */
+/* line-height: 1.2em; */
+/* } */
 
 nav {
   display: flex;
@@ -144,10 +134,9 @@ nav {
   font-size: 1.2em;
   line-height: 2.4em;
   margin-bottom: 20px;
-  font-family: "Adwaita Sans", sans;
-  /* font-optical-sizing: auto; */
-  /* font-weight: 400; */
-  /* font-style: normal; */
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .block {
@@ -160,9 +149,8 @@ nav {
 }
 
 .block h1 {
-  font-family: "Adwaita Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 1.2em;
   text-align: center;

@@ -10,8 +10,6 @@ Site {
         "AdwaitaMono-BoldItalic.woff",
         "AdwaitaMono-Italic.woff",
         "AdwaitaMono-Regular.woff",
-        "AdwaitaSans-Italic.woff",
-        "AdwaitaSans-Regular.woff",
         "hole.png",
         "hole-left.png",
         "hole-right.png",
@@ -22,5 +20,6 @@ Site {
         "green-fabric.jpg",
         "olive-fabric.jpg",
         "green-background.jpg",
+        "favicon.ico",
     ],
 }
