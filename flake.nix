@@ -40,6 +40,9 @@
         };
         default = self.devShells.${pkgs.system}.zig_0_15;
       });
+      packages = forAllSystems (pkgs: {
+        adwaita-fonts = pkgs.callPackage ./adwaita.nix { };
+      });
       apps = forAllSystems (pkgs: {
         release =
           let

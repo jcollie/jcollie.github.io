@@ -3,7 +3,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Rokkitt", serif;
+  font-family: "Adwaita Sans", sans;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
@@ -17,7 +17,7 @@ a {
 }
 
 html {
-  font-family: "Rokkitt", serif;
+  font-family: "Adwaita Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -26,13 +26,12 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* background-color: #111111; */
 }
 
 body {
   line-height: 1.2em;
-  background-image: url("/blackboard.jpg");
-  background-size: repeat;
+  background-image: url("/green-background.jpg");
+  background-repeat: repeat;
 }
 
 #columns {
@@ -70,15 +69,32 @@ body {
 #columns > #paper {
   width: 800px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#columns > #paper > #title {
+  padding: 1em;
+  margin-top: 1em;
+  background: #ffffff00;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-bottom-style: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-color: #a1aaa577;
+  border-width: 0.1em;
 }
 
 #columns > #paper > #bars {
-  padding: 1em;
   min-height: 100vh;
   background: repeating-linear-gradient(
     180deg,
-    #d0f0d077 0 3.6em,
-    #ffffff00 0 7.2em
+    #a1aaa577 0 0.1em,
+    #bfd6cc77 0.1px 3.5em,
+    #a1aaa577 3.5em 3.6em,
+    #ffffff00 3.6em 7.2em
   );
 }
 
@@ -101,12 +117,24 @@ p {
   margin-bottom: 0.5em;
 }
 
-.code {
-  font-family: "Inconsolata", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
+code {
+  font-family: "Adwaita Mono", monospace;
+  /* font-size: 0.9em; */
+  line-height: 1.2em;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400; */
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  /* font-variation-settings: "wdth" 100; */
+}
+
+.code {
+  font-family: "Adwaita Mono", monospace;
+  /* font-size: 0.9em; */
+  line-height: 1.2em;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400; */
+  font-style: normal;
+  /* font-variation-settings: "wdth" 100; */
 }
 
 nav {
@@ -116,10 +144,10 @@ nav {
   font-size: 1.2em;
   line-height: 2.4em;
   margin-bottom: 20px;
-  font-family: "Rokkitt", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Adwaita Sans", sans;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400; */
+  /* font-style: normal; */
 }
 
 .block {
@@ -132,7 +160,7 @@ nav {
 }
 
 .block h1 {
-  font-family: "Rokkitt", serif;
+  font-family: "Adwaita Sans", serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
@@ -162,4 +190,5 @@ footer {
 
 footer hr {
   width: 100%;
+  margin-bottom: 1em;
 }

@@ -6,6 +6,12 @@ Site {
     .assets_dir_path = "assets",
     .static_assets = [
         "Temml.woff2",
+        "AdwaitaMono-Bold.woff",
+        "AdwaitaMono-BoldItalic.woff",
+        "AdwaitaMono-Italic.woff",
+        "AdwaitaMono-Regular.woff",
+        "AdwaitaSans-Italic.woff",
+        "AdwaitaSans-Regular.woff",
         "hole.png",
         "hole-left.png",
         "hole-right.png",
@@ -13,5 +19,8 @@ Site {
         "white-crumpled-paper-texture-background.jpg",
         "table.jpg",
         "blackboard.jpg",
+        "green-fabric.jpg",
+        "olive-fabric.jpg",
+        "green-background.jpg",
     ],
 }
