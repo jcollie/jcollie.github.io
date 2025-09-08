@@ -40,5 +40,17 @@
         };
         default = self.devShells.${pkgs.system}.zig_0_15;
       });
+      apps = forAllSystems (pkgs: {
+        release =
+          let
+            program = pkgs.writeShellScript "build-website" ''
+              ${pkgs.lib.getExe zine.packages.${pkgs.system}.zine} release
+            '';
+          in
+          {
+            type = "app";
+            program = "${program}";
+          };
+      });
     };
 }
