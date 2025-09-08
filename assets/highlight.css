@@ -10,9 +10,12 @@
 }
 
 pre {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  padding: 10px 5px;
+  /* border-top: 1px solid white; */
+  /* border-bottom: 1px solid white; */
+  padding: 0.6em 0.4em;
+  background-color: color-mix(in srgb, grey, transparent 50%);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 code.ziggy {

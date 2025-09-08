@@ -3,62 +3,142 @@ h2,
 h3,
 h4,
 h5 {
-  color: #ddd;
-  font-family: "Verdana", sans-serif;
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  /* color: #ddd; */
 }
 
 b,
 strong {
-  color: #fff;
+  /* color: #fff; */
 }
 
 a {
-  color: #eee;
+  /* color: #eee; */
 }
 
 html {
-  color: #ccc;
-  font-family: "Georgia", serif;
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.2em;
+  line-height: 1.2em;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #111;
+  background-color: #111111;
 }
 
 body {
-  width: 800px;
-  padding: 15px;
+  /* width: 800px; */
+  /* padding: 15px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  line-height: 1.2em;
+}
+
+#columns {
   display: flex;
-  flex-direction: column;
+  /* height: 100vh; */
+  min-height: 100vh;
+  flex-direction: row;
+  background-image: url("/white-crumpled-paper-texture-background.jpg");
+  background-repeat: repeat-y;
+}
+
+#columns > .holes {
+  width: 28px;
+  min-height: 100vh;
+}
+
+#columns > #paper {
+  width: 800px;
+  min-height: 100vh;
+}
+
+#columns > #paper > #bars {
+  padding: 1em;
+  min-height: 100vh;
+  background: repeating-linear-gradient(
+    180deg,
+    #d0f0d088 0 3.6em,
+    #ffffff88 0 7.2em
+  );
+}
+
+#content {
+  padding: 1em;
+  /* background: repeating-linear-gradient( */
+  /* 180deg, */
+  /* #d0f0d0 0 3.6em, */
+  /* #ffffff 0 7.2em */
+  /* ); */
+}
+
+.holes.right {
+  background-image: url("/hole-right.png");
+  background-repeat: repeat-y;
+}
+
+.holes.left {
+  background-image: url("/hole-left.png");
+  background-repeat: repeat-y;
 }
 
 .site-title {
-  font-size: 2.5em;
+  font-size: 2.4em;
   margin-bottom: 10px;
-  /* text-align: center; */
+  text-align: center;
+}
+
+h1.title {
+  text-align: center;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.code {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   font-size: 1.2em;
+  line-height: 2.4em;
   margin-bottom: 20px;
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .block {
-  border: 1px dotted white;
-  padding: 5px 15px;
-  margin: 0 10px;
-  text-align: center;
+  border: 1px dotted green;
+  padding: 0em 1em;
+  margin: 0 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .block h1 {
-  font-size: 1em;
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.2em;
   text-align: center;
   margin-bottom: 0;
 }
@@ -70,7 +150,9 @@ nav {
 .wave {
   background: #111;
   color: #fff;
-  text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+  text-shadow:
+    1px 1px 10px #fff,
+    1px 1px 10px #ccc;
 }
 
 footer {

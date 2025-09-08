@@ -14,25 +14,9 @@
     .feed>div>h2 {
       margin-top: 0.4em;
     }
-
-    .feed>div[id]:target {
-      animation: pulse-div 2s ease-in-out 1 forwards;
-    }
-
-    @keyframes pulse-div {
-
-      0%,
-      100% {
-        background-color: #222;
-      }
-
-      50% {
-        background-color: #111;
-      }
-    }
   </style>
 </head>
-<body id="body">
+<div id="content">
   <h1 class="title" :text="$page.title"></h1>
   <div :html="$page.contentSection('about')"></div>
   <div class="feed" :loop="$page.contentSections().slice(1)">
@@ -42,4 +26,4 @@
       <ctx :html="$loop.it.htmlNoHeading()"></ctx>
     </div>
   </div>
-</body>
+</div>

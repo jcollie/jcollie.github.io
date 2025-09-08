@@ -6,6 +6,9 @@
     <title :text="$site.title"></title>
     <link type="text/css" rel="stylesheet" href="$site.asset('style.css').link()">
     <link type="text/css" rel="stylesheet" href="$site.asset('highlight.css').link()">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- mathtex -->
     <link type="text/css" rel="stylesheet" href="$site.asset('Temml-Local.css').link()">
     <script defer src="$site.asset('temml.min.js').link()"></script>
@@ -14,23 +17,32 @@
     <super>
   </head>
   <body id="body">
-    <h1 class="site-title" :text="$site.title"></h1>
-    <nav>
-      <a href="$site.page('').link()">Home</a>
-       &nbsp; • &nbsp;
-      <a href="$site.page('about').link()">About</a>
-       &nbsp; • &nbsp;
-      <a href="$site.page('blog').link()">Blog</a>
-      <ctx :if="$site.page('devlog').subpages().first?()">
-         &nbsp; • &nbsp;
-        <a href="$if.link()">Devlog</a>
-      </ctx>
-    </nav>
-    <super>
-    <footer>
-      <hr>
-      <p></p>
-      <img src="$site.asset('rush-starman.png').link()" width=120>
-    </footer>
+    <div id="columns">
+      <div class="holes right"></div>
+      <div id="paper">
+        <div id="bars">
+          <div id="content">
+            <h1 class="site-title" :text="$site.title"></h1>
+            <nav>
+              <a href="$site.page('').link()">Home</a>
+               &nbsp; • &nbsp;
+              <a href="$site.page('about').link()">About</a>
+               &nbsp; • &nbsp;
+              <a href="$site.page('blog').link()">Blog</a>
+              <ctx :if="$site.page('devlog').subpages().first?()">
+                 &nbsp; • &nbsp;
+                <a href="$if.link()">Devlog</a>
+              </ctx>
+            </nav>
+            <super>
+            <footer>
+              <hr>
+              <img src="$site.asset('rush-starman.png').link()" width=120>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="holes left"></div>
+    </div>
   </body>
 </html>
