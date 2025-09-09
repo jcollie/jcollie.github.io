@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
     <title :text="$site.title"></title>
-    <link type="text/css" rel="stylesheet" href="$site.asset('adwaita.css').link()">
-    <link type="text/css" rel="stylesheet" href="$site.asset('style.css').link()">
+    <link type="text/css" rel="stylesheet" href="$build.asset('style.css').link()">
     <link type="text/css" rel="stylesheet" href="$site.asset('highlight.css').link()">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

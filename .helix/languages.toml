@@ -1,0 +1,3 @@
+[[language]]
+name = "css"
+file-types = [{ glob = "*.css.in" }]

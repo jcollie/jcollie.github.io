@@ -16,7 +16,8 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "zine": "zine"
+        "zine": "zine",
+        "zon2nix": "zon2nix_2"
       }
     },
     "zine": {
@@ -60,6 +61,26 @@
       "original": {
         "type": "git",
         "url": "https://github.com/jcollie/zon2nix.git"
+      }
+    },
+    "zon2nix_2": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1757273192,
+        "narHash": "sha256-4XyJ6fmKd9wgJ7vHUQuULYy5ps2gUgkkDk/PrJb2OPY=",
+        "owner": "jcollie",
+        "repo": "zon2nix",
+        "rev": "728e15a05e8f48765a64f74d5720ec0a2567fe95",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jcollie",
+        "repo": "zon2nix",
+        "type": "github"
       }
     }
   },

@@ -1,0 +1,27 @@
+.{
+    .name = .jcollie_github_io,
+    .version = "0.0.0",
+    .fingerprint = 0xc5f6b1097b580310, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.15.1",
+    .dependencies = .{
+        .zine = .{
+            .url = "git+https://github.com/jcollie/zine#e7c907595e6e8de037396f6309bd1957fa230dd3",
+            .hash = "zine-0.11.1-ou6nIHJ_FgCLGnFJbfUKZyACo6AT0rFeRw-UoM1E7qld",
+        },
+        .mdi = .{
+            .url = "git+https://github.com/Templarian/MaterialDesign-SVG#9e04201d4557e729822fb57f62a316c3dea1d4a8",
+            .hash = "N-V-__8AAHpiUgA3xCI5Thow5tYteuMhT6KeX3KB82cia9gq",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "assets",
+        "content",
+        "layouts",
+        "zine.ziggy",
+        // For example...
+        //"LICENSE",
+        "README.md",
+    },
+}

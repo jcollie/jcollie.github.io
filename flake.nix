@@ -8,12 +8,19 @@
       url = "git+https://github.com/jcollie/zine.git?ref=jeff";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    zon2nix = {
+      url = "github:jcollie/zon2nix";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+      };
+    };
   };
   outputs =
     {
       self,
       nixpkgs,
       zine,
+      zon2nix,
       ...
     }:
     let
@@ -36,6 +43,7 @@
             pkgs.zig_0_15
             pkgs.pinact
             zine.packages.${pkgs.system}.zine
+            zon2nix.packages.${pkgs.system}.zon2nix
           ];
         };
         default = self.devShells.${pkgs.system}.zig_0_15;
@@ -48,7 +56,7 @@
         release =
           let
             program = pkgs.writeShellScript "build-website" ''
-              ${pkgs.lib.getExe zine.packages.${pkgs.system}.zine} release
+              ${pkgs.lib.getExe pkgs.zig_0_15} build release
             '';
           in
           {
