@@ -50,7 +50,6 @@
       });
       packages = forAllSystems (pkgs: {
         adwaita-fonts = pkgs.callPackage ./adwaita.nix { };
-        american-typewriter-fonts = pkgs.callPackage ./american-typewriter.nix { };
       });
       apps = forAllSystems (pkgs: {
         release =
