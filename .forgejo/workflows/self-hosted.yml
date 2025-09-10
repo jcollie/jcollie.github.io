@@ -1,0 +1,21 @@
+name: Deploy the website to self-hosted website.
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: nixos
+    steps:
+      - name: Checkout content
+        uses: actions/checkout@v4.3.0
+        with:
+          fetch-depth: 0
+
+      - name: Build website
+        run: nix run .#release
